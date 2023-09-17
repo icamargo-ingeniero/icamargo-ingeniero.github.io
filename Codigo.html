@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Parcial 1</title>
+       <style> 
+            #est1{font-weight:bold; font-size: 10px; font-family:Calibri;} /*Se instancia un id para especificar letra en negrilla, con un tamaño de 10 pixeles y se le asigna la fuente de calibri*/
+            #est2{font-weight:bold; font-size: 10px; font-family:Calibri; border: 3px solid black;} /*Se instancia un id para especificar letra en negrilla, con un tamaño de 10 pixeles, se le asigna la fuente de calibri y se indica que debe tener un borde de color negro con un grosor de 3 pixeles*/
+            #TITULO{font-size: 20px; color: red; font-family: 'Times New Roman', Times, serif; text-align: center} /*Se instancia un id para especificar letra con un tamaño de 20 pixeles, se le asigna la fuente de Times New Roman, se indica que debe ser de color rojo y estar centrada */
+            #tabla{font-size: 10px; font-family:Calibri; text-align: center;} /*Se instancia un id que indica a nivel global los objetos de la tabla deben tomar las propiedades en la fuente con un tamaño de 10 pixeles, con una fuente calibri y que el texto debe presentarse de manera centrada */
+            .colum1 {width: 30px;} /*Se instancia una clase que la columna debe tener un ancho de X cantidad de pixeles */
+            .colum2 {width: 140px;} /*Se instancia una clase que la columna debe tener un ancho de X cantidad de pixeles */
+       </style>
+    </head>
+
+    <body>
+        <table id="tabla" > <!-- Creacion de una tabla externa -->
+            <TR>
+                 <TH ID="TITULO" colspan="3" >EVALUACION MOMENTO 1</TH>  <!-- colspan indinca cuantas celdas va a tomar -->
+            </TR>
+
+            <TR>
+                <TD id="est1" colspan="2" > ESTUDIANTE</TD>  <!-- -->
+                <TD id="est2"> Ivan Dario Camargo Forigua</TD>
+            </TR>
+
+            <TR style="font-family: 'Times New Roman', Times, serif;">
+               <TH class="colum1">N.°</TH>
+               <TH class="colum2">Localidad</TH>
+               <TH>Mapa</TH>
+            </TR>
+
+            <TR>      
+                <TD colspan="3"> <!-- Antes de crear la tabla interna se indica que esta va a estar dividida en 3 columnas para que conserve la distribución de la tabla externa  -->
+                    <TAble border="1"> <!-- Creacion de una tabla interna con un borde de 1 -->
+                        <TR>
+                            <TD class="colum1">1</TD>
+                            <TD class="colum2">Usaquén</TD>
+                            <TD><img src="https://repositoriocdim.esap.edu.co/bitstream/handle/123456789/25059/18092018_Usaqu%c3%a9n%20diagn%c3%b3stico%202017%20-%20SDIS.pdf.jpg?sequence=4&isAllowed=y" width="50%" height="50%"/></TD> <!-- Se ingresa la imagen y se asigna un tamaño del 30% en relacion a lo ancho y alto -->
+                        </TR>
+
+                        <TR>
+                            <TD class="colum1">2</TD>
+                            <TD class="colum2">Chapinero</TD>
+                            <TD><img src="https://repositoriocdim.esap.edu.co/bitstream/handle/123456789/25062/02092019_Chapinero_Diagnostico_2019.pdf.jpg?sequence=4&isAllowed=y" width="50%" height="50%"/></TD> <!-- Se ingresa la imagen y se asigna un tamaño del 30% en relacion a lo ancho y alto -->
+                        </TR>
+        
+                        <TR>
+                            <TD class="colum1">3</TD>
+                            <TD class="colum2">Santa Fe</TD>
+                            <TD><img src="https://repositoriocdim.esap.edu.co/bitstream/handle/123456789/25065/02092019_SantaFe_Diagnostico_2019.pdf.jpg?sequence=4&isAllowed=y" width="50%" height="50%"/></TD> <!-- Se ingresa la imagen y se asigna un tamaño del 30% en relacion a lo ancho y alto -->
+                        </TR>
+
+                        <TR>
+                            <TD class="colum1">4</TD>
+                            <TD class="colum2">San Cristóbal</TD>
+                            <TD><img src="https://repositoriocdim.esap.edu.co/bitstream/handle/123456789/25067/18092018_San%20Crist%c3%b3bal%20diagn%c3%b3stico%202017%20-%20SDIS.pdf.jpg?sequence=7&isAllowed=y" width="50%" height="50%"/></TD> <!-- Se ingresa la imagen y se asigna un tamaño del 30% en relacion a lo ancho y alto -->
+                        </TR>
+
+                        <TR>
+                            <TD class="colum1">5</TD>
+                            <TD class="colum2">Usme</TD>
+                            <TD><img src="https://repositoriocdim.esap.edu.co/bitstream/handle/123456789/25068/18092018_Usme%20diagn%c3%b3stico%202017%20-%20SDIS.pdf.jpg?sequence=7&isAllowed=y" width="50%" height="50%"/></TD> <!-- Se ingresa la imagen y se asigna un tamaño del 30% en relacion a lo ancho y alto -->
+                        </TR>
+
+                        <TR>
+                            <TD class="colum1">6</TD>
+                            <TD class="colum2">Tunjuelito</TD>
+                            <TD><img src="https://repositoriocdim.esap.edu.co/bitstream/handle/123456789/25069/12092018_Tunjuelito%20diagn%c3%b3stico%202017%20-%20SDIS.pdf.jpg?sequence=7&isAllowed=y" width="50%" height="50%"/></TD> <!-- Se ingresa la imagen y se asigna un tamaño del 30% en relacion a lo ancho y alto -->
+                        </TR>
+
+                        <TR>
+                            <TD class="colum1">7</TD>
+                            <TD class="colum2">Bosa</TD>
+                            <TD><img src="https://repositoriocdim.esap.edu.co/bitstream/handle/123456789/25070/12092018_Bosa%20diagn%c3%b3stico%202017%20-%20SDIS.pdf.jpg?sequence=7&isAllowed=y" width="50%" height="50%"/></TD> <!-- Se ingresa la imagen y se asigna un tamaño del 30% en relacion a lo ancho y alto -->
+                        </TR>
+
+                        <TR>
+                            <TD class="colum1">8</TD>
+                            <TD class="colum2">Kennedy</TD>
+                            <TD><img src="https://repositoriocdim.esap.edu.co/bitstream/handle/123456789/25071/12092018_Kennedy%20diagn%c3%b3stico%202017%20-%20SDIS.pdf.jpg?sequence=7&isAllowed=y" width="50%" height="50%"/></TD> <!-- Se ingresa la imagen y se asigna un tamaño del 30% en relacion a lo ancho y alto -->
+                        </TR>
+
+                        <TR>
+                            <TD class="colum1">9</TD>
+                            <TD class="colum2">Fontibón</TD>
+                            <TD><img src="https://repositoriocdim.esap.edu.co/bitstream/handle/123456789/25072/12092018_Fontib%c3%b3n%20diagn%c3%b3stico%202017%20-%20SDIS.pdf.jpg?sequence=7&isAllowed=y" width="50%" height="50%"/></TD> <!-- Se ingresa la imagen y se asigna un tamaño del 30% en relacion a lo ancho y alto -->
+                        </TR>
+
+                        <TR>
+                            <TD class="colum1">10</TD>
+                            <TD class="colum2">Engativá</TD>
+                            <TD><img src="https://repositoriocdim.esap.edu.co/bitstream/handle/123456789/25073/12092018_Engativ%c3%a1%20diagn%c3%b3stico%202017%20-%20SDIS.pdf.jpg?sequence=7&isAllowed=y" width="50%" height="50%"/></TD> <!-- Se ingresa la imagen y se asigna un tamaño del 30% en relacion a lo ancho y alto -->
+                        </TR>
+
+                        <TR>
+                            <TD class="colum1">11</TD>
+                            <TD class="colum2">Suba</TD>
+                            <TD><img src="https://repositoriocdim.esap.edu.co/bitstream/handle/123456789/25074/12092018_Suba%20diagn%c3%b3stico%202017%20-%20SDIS.pdf.jpg?sequence=7&isAllowed=y" width="50%" height="50%"/></TD> <!-- Se ingresa la imagen y se asigna un tamaño del 30% en relacion a lo ancho y alto -->
+                        </TR>
+
+                        <TR>
+                            <TD class="colum1">12</TD>
+                            <TD class="colum2">Barrios Unidos</TD>
+                            <TD><img src="https://repositoriocdim.esap.edu.co/bitstream/handle/123456789/25075/18092018_Barrios%20Unidos%20diagn%c3%b3stico%202017%20-%20SDIS.pdf.jpg?sequence=7&isAllowed=y" width="50%" height="50%"/></TD> <!-- Se ingresa la imagen y se asigna un tamaño del 30% en relacion a lo ancho y alto -->
+                        </TR>
+
+                        <TR>
+                            <TD class="colum1">13</TD>
+                            <TD class="colum2">Teusaquillo</TD>
+                            <TD><img src="https://repositoriocdim.esap.edu.co/bitstream/handle/123456789/25076/12092018_Teusaquillo%20diagn%c3%b3stico%202017%20-%20SDIS.pdf.jpg?sequence=7&isAllowed=y" width="50%" height="50%"/></TD> <!-- Se ingresa la imagen y se asigna un tamaño del 30% en relacion a lo ancho y alto -->
+                        </TR>
+
+                        <TR>
+                            <TD class="colum1">14</TD>
+                            <TD class="colum2">Los Mártires</TD>
+                            <TD><img src="https://repositoriocdim.esap.edu.co/bitstream/handle/123456789/25077/18092018_Los%20M%c3%a1rtires%20diagn%c3%b3stico%202017%20-%20SDIS.pdf.jpg?sequence=7&isAllowed=y" width="50%" height="50%"/></TD> <!-- Se ingresa la imagen y se asigna un tamaño del 30% en relacion a lo ancho y alto -->
+                        </TR>
+
+                        <TR>
+                            <TD class="colum1">15</TD>
+                            <TD class="colum2">Antonio Nariño</TD>
+                            <TD><img src="https://repositoriocdim.esap.edu.co/bitstream/handle/123456789/25078/12092018_Antonio%20Narino%20diagn%c3%b3stico%202017%20-%20SDIS.pdf.jpg?sequence=7&isAllowed=y" width="50%" height="50%"/></TD> <!-- Se ingresa la imagen y se asigna un tamaño del 30% en relacion a lo ancho y alto -->
+                        </TR>
+
+                        <TR>
+                            <TD class="colum1">16</TD>
+                            <TD class="colum2">Puente Aranda</TD>
+                            <TD><img src="https://repositoriocdim.esap.edu.co/bitstream/handle/123456789/25079/12092018_Puente%20Aranda%20diagn%c3%b3stico%202017%20-%20SDIS.pdf.jpg?sequence=7&isAllowed=y" width="50%" height="50%"/></TD> <!-- Se ingresa la imagen y se asigna un tamaño del 30% en relacion a lo ancho y alto -->
+                        </TR>
+
+                        <TR>
+                            <TD class="colum1">17</TD>
+                            <TD class="colum2">La Candelaria</TD>
+                            <TD><img src="https://repositoriocdim.esap.edu.co/bitstream/handle/123456789/25080/12092018_La%20Candelaria%20diagn%c3%b3stico%202017%20-%20SDIS.pdf?sequence=7&isAllowed=y" width="50%" height="50%"/></TD> <!-- Se ingresa la imagen y se asigna un tamaño del 30% en relacion a lo ancho y alto -->
+                        </TR>
+
+                        <TR>
+                            <TD class="colum1">18</TD>
+                            <TD class="colum2">Rafael Uribe Uribe</TD>
+                            <TD><img src="https://repositoriocdim.esap.edu.co/bitstream/handle/123456789/25081/12092018_Rafael%20Uribe%20Uribe%20diagn%c3%b3stico%202017%20-%20SDIS.pdf.jpg?sequence=7&isAllowed=y" width="50%" height="50%"/></TD> <!-- Se ingresa la imagen y se asigna un tamaño del 30% en relacion a lo ancho y alto -->
+                        </TR>
+
+                        <TR>
+                            <TD class="colum1">19</TD>
+                            <TD class="colum2">Ciudad Bolívar</TD>
+                            <TD><img src="https://repositoriocdim.esap.edu.co/bitstream/handle/123456789/25083/12092018_Ciudad%20Bolivar%20diagn%c3%b3stico%202017%20-%20SDIS.pdf.jpg?sequence=7&isAllowed=y" width="50%" height="50%"/></TD> <!-- Se ingresa la imagen y se asigna un tamaño del 30% en relacion a lo ancho y alto -->
+                        </TR>
+
+                        <TR>
+                            <TD class="colum1">20</TD>
+                            <TD class="colum2">Sumapaz</TD>
+                            <TD><img src="https://repositoriocdim.esap.edu.co/bitstream/handle/123456789/25082/12092018_Sumapaz%20diagn%c3%b3stico%202017%20-%20SDIS.pdf.jpg?sequence=7&isAllowed=y" width="50%" height="50%"/></TD> <!-- Se ingresa la imagen y se asigna un tamaño del 30% en relacion a lo ancho y alto -->
+                        </TR>
+                    </TAble>
+               </TD>
+            </TR>        
+        </table>
+    </body>
+</html>
