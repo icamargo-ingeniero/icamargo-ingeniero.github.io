@@ -1,0 +1,33 @@
+.grid-container 
+{
+    display: grid; /*Se hace el llamado de la clase para un cuadricula*/
+    grid-template-rows: 50px repeat(7, 50px); /*Se indica el máximo de filas y su tamaño*/
+    grid-template-columns: 50px repeat(7,50px); /*Se indica el máximo de columnas y su tamaño*/
+    grid-gap: 4px; /*Especio entre las celdas*/
+}
+
+.grid-blanco
+{
+    background: white; /*Se indica el color que va a tener la celda*/
+    border: black 4px solid;  /*Se indica el tamaño y color del borde de la celda*/
+    color: black; /*Se indica el color del texto que va a salir en la celda*/
+    width: 50px; /*Se limita el tamaño de la celda*/
+    height: 50px; /*Se limita el tamaño de la celda*/
+    display: flex; /*Se hace el llamado de una clase "flex" para después parametrizar sus atributos*/
+    align-items: center; /*Se configuran atributos de la clase llamada*/
+    text-align: center; /*Se configuran atributos de la clase llamada*/
+    justify-content: center; /*Se configuran atributos de la clase llamada*/
+}
+
+.grid-negro
+{
+    background: black; /*Se indica el color que va a tener la celda*/
+    border: black 4px solid; /*Se indica el tamaño y color del borde de la celda*/
+    color: white; /*Se indica el color del texto que va a salir en la celda*/
+    width: 50px; /*Se limita el tamaño de la celda*/
+    height: 50px; /*Se limita el tamaño de la celda*/
+    display: flex; /*Se hace el llamado de una clase "flex" para después parametrizar sus atributos*/
+    align-items: center; /*Se configuran atributos de la clase llamada*/
+    text-align: center; /*Se configuran atributos de la clase llamada*/
+    justify-content: center; /*Se configuran atributos de la clase llamada*/
+}
