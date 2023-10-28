@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajo Autónomo</title>
+    <link rel="stylesheet" href="27_10_2023.css"> <!--Se hace el llamado del css-->
+    <script src="27_10_2023.js"></script>
+</head>
+<body id="fondo">
+
+    <h1>Ivan Dario Camargo Forigua</h1>
+    <h1>Estudiante de Ingeniería de Telecomunicaciones</h1>
+
+    <h2>INTRODUCCIÓN A JAVASCRIPT</h2>
+
+    <h3 style="color: red;">El Tema: javascript</h3> 
+    
+    <h3 style="font-weight: lighter;">
+        <ol>
+            <li>Como trabajarlo e instalar los Plugins necesarios en visual estudio code y como integrarlo a html. </li>
+            <li>Realizar un ejemplo sencillo con html, css y javascript</li>
+        </ol>
+    </h3>
+
+    <h2 style="color: blue;">SOLUCIÓN</h2>
+
+    <h3 style="color: red;">El Tema: javascript</h3> 
+    
+    <h3 style="font-weight: lighter;">
+        <ol>
+            <li><strong>Como trabajarlo e instalar los Plugins necesarios en visual estudio code y como integrarlo a html. </strong></li>
+                <p>
+                    En la página de <a href="https://code.visualstudio.com/">Microsoft Visual Code</a> su documentación indica que el 
+                    software de visual code, no requiere complementos adicionales para la 
+                    interpretación de la extensión .js ya que estas librerías ya están incluidas 
+                    por defecto 
+                </p>
+
+                <p>
+                    La manera en que se puede integrar el código JavaScript en HTML, es enlazando 
+                    un archivo externo de extensión .js a la cabecera del código HTML, o el otro 
+                    método es que directamente en el cuerpo del HTML se llamen las funciones y se 
+                    apliquen en partes específicas de la página. 
+                </p>
+
+            <li><strong>Realizar un ejemplo sencillo con html, css y javascript</strong></li>
+
+            <p style="text-align: center;"> <strong>En el contenido actual de esta página se están usando algunos estilos CSS como lo son :</strong></p>
+
+                <p><strong>.fondo</strong></p>
+                En este estilo estamos determinado el color de fonde de la página web
+                <p><strong>.h1</strong></p>
+                Es usado para el título de la publicación donde sale el nombre del estudiante y 
+                la carrera la cual eta cursando actualmente, adicional a eso se utilizan estilos 
+                para dar borde y color a las letras como lo son:
+                <strong style="background-color: yellow;">-webkit-text-fill-color: #000000;</strong>
+                Da el tono de relleno que va a tener el texto
+                <strong style="background-color: yellow;">-webkit-text-stroke: 0.5px rgb(255, 0, 0);</strong>
+                Indica el color que va a tener el borde de cada letra y su grosor que esta dado en pixeles 
+                <p><strong>.h2</strong></p>
+                Se utiliza para los subtítulos (INTRODUCCIÓN A JAVASCRIPT y SOLUCIÓN)
+                <p><strong>h3</strong></p>
+                Se utiliza para el contenido explicativo de cada punto o para dar respuesta a cada una de 
+                las consultas solicitadas 
+
+            <p style="text-align: center;"> <strong>En el contenido actual de esta página se están usando algunos comandos de JavaScript que son :</strong></p>
+
+            <p>El siguiente botón este configurado con el evento onclick de tal manera que cada vez que se dé un clic sobre el ejecutara el java script que tiene relacionado</p>
+            
+            <button onclick="fondo2()">BOTÓN PARA CAMBIAR DE COLOR</button>
+
+                <p>
+                    El primer uso de JavaScript como se logra percibir al ingreso de la página es una bienvenida 
+                    con un mensaje emergente, dentro de la codificación este mensaje se alerta se conoce como
+                    <p><strong>window.alert(" XXXXXXXXX ");</strong></p>
+ 
+                </p>
+
+                <p>
+                    El segundo y tercero no son visibles para el usuario, ya que estas son dos variables que 
+                    interactuaran con un botón, las variables son colores e índiceColor, la primera es un vector 
+                    en el cual se declara una serie de colores y la variable indiceColor inicializa el objeto en 
+                    0 para su uso
+                    <p><strong>var colores = ["black", "red", "blue", "green", "#9fedf3", "yellow", "white"];</strong></p>
+                    <p><strong>var indiceColor = 0;</strong></p>
+                </p>
+
+                <p>
+                    El cuarto uso que tenemos es el de una función que se llama fondo2
+                </p>
+
+                <p>
+                    Dentro de esta función se esta indicando que en el documento (hace referencia 
+                    al contenido del .html), debe buscar un elemento el cual pertenece a la familia 
+                    de los Id cuyo nombre es fondo; cuando lo haya encontrado va  asignarle un nuevo 
+                    valor al fondo, y va ser el valor que trae la variable indiceColor
+                </p>
+
+                <p><strong>document.getElementById("fondo").style.backgroundColor = colores[indiceColor]; </strong></p>
+
+                <p>
+                    y para finalizar la función tenemos el un reinicio de la variable, que en el 
+                    momento que llegue a su máximo, esta será establecida nuevamente en 0 con el 
+                    uso de % y de esta manera otra vez iniciar desde el primer color del arreglo
+                </p>
+
+                <p><strong>indiceColor = (indiceColor + 1) % colores.length; </strong></p>
+        </ol>
+    </h3>
+
+
+
+</body>
+</html>
